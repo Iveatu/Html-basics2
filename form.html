@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Form</title>
+</head>
+<body>
+    <h1>Sign Up</h1>
+    <section>
+    <fieldset> <!--this is used to draw a square around the radio button areas-->
+        <legend>1. Your Basic Info</legend>
+        <section> <!--if you dont want your message to be sent to the browser, but on the payload of your document for security issues, use method POST-->
+            <form action="./server.html" method="post">
+                <!--use label to give the form textbox a name. the label name is the id on the input line of code-->
+                <label for="name1">Name:</label>
+                    <input type ="text" name="fullname" id="name1" required><!--the required forces you to fill that texfield-->
+                <label for="myemail">Email:</label>
+                    <input type ="email" name ="email" id="myemail" required>
+                <label for="pwd">Password:</label>
+                    <input type ="password" name ="password" id="pwd" required>
+                <label for="Age">Age:</label>
+                    <input type ="radio" name ="Age" id="Age" required> Under 13
+                    <input type ="radio" name ="Age" id="Age" required> Over 13
+         
+          </section>
+        </section>
+
+                <fieldset> <!--this is used to draw a square around the radio button areas-->
+                <legend>2. Your Profile</legend>
+                <section> <!--if you dont want your message to be sent to the browser, but on the payload of your document for security issues, use method POST-->
+                    <form action="./server.html" method="post">
+                        <!--use label to give the form textbox a name. the label name is the id on the input line of code-->
+                        <label for="name1">Bio:</label>
+                        <textarea placeholder =""name="comment" id="" cols="20" rows="2"></textarea>
+                        <label for="Job role">Job role:</label>
+                            <select name id="job" name="Job role"><!--use select when you want to create dropdown list to select from-->
+                                <optgroup label="Web">
+                                    <option value="Front-End Developer">Front-End Developer</option>
+                                    <option value="web Designer">Web Designer</option>
+                                    <option value="WordPress Developer">WordPress Developer</option>
+                                </optgroup>    
+                                    <optgroup label="Mobile">
+                                    <option value="Android Developer">Android Developer</option>
+                                    <option value="IOS Developer">IOS Developer</option>
+                                </optgroup>
+                                <optgroup label="Business">
+                                    <option value="Business Owner">Business Owner</option>
+                                    <option value="Freelancer">Freelancer</option>
+                                </optgroup>
+                            </select>
+                        <label for="Interest">Interests:</label>
+                            <input type="checkbox" name="Development" id="Development">Development
+                            <input type="checkbox" name="Design" id="Design">Design
+                            <input type="checkbox" name="Business" id="Business">Business
+                </section>
+                    </form>
+                </fieldset>
+                <!--add button to your form-->
+                    <button type ="submit" >Sign Up</button>
+            
+                
+</body>
+</html>
