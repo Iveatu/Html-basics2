@@ -26,11 +26,11 @@
          
           </section>
         </section>
-
+        <form action="./server.html" method="get">
                 <fieldset> <!--this is used to draw a square around the radio button areas-->
                 <legend>2. Your Profile</legend>
                 <section> <!--if you dont want your message to be sent to the browser, but on the payload of your document for security issues, use method POST-->
-                    <form action="./server.html" method="post">
+                    
                         <!--use label to give the form textbox a name. the label name is the id on the input line of code-->
                         <label for="name1">Bio:</label>
                         <textarea placeholder =""name="comment" id="" cols="20" rows="2"></textarea>
@@ -55,11 +55,13 @@
                             <input type="checkbox" name="Design" id="Design">Design
                             <input type="checkbox" name="Business" id="Business">Business
                 </section>
-                    </form>
+                <!--add button to your form-->
+                
+                   
                 </fieldset>
                 <!--add button to your form-->
-                    <button type ="submit" >Sign Up</button>
-            
+                    <button type ="submit" value="Submit">Sign Up</button>
+            </form>
                 
 </body>
 </html>
