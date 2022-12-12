@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>My Form</title>
 </head>
 <body>
+    <form>
     <h1>Sign Up</h1>
     <section>
-    <fieldset> <!--this is used to draw a square around the radio button areas-->
-        <legend>1. Your Basic Info</legend>
-        <section> <!--if you dont want your message to be sent to the browser, but on the payload of your document for security issues, use method POST-->
-            <form action="./server.html" method="post">
+       <fieldset> <!--this is used to draw a square around the radio button areas-->
+          <legend>1. Your Basic Info</legend>
+            <section> <!--if you dont want your message to be sent to the browser, but on the payload of your document for security issues, use method POST-->
+              
                 <!--use label to give the form textbox a name. the label name is the id on the input line of code-->
                 <label for="name1">Name:</label>
                     <input type ="text" name="fullname" id="name1" required><!--the required forces you to fill that texfield-->
@@ -23,14 +25,13 @@
                 <label for="Age">Age:</label>
                     <input type ="radio" name ="Age" id="Age" required> Under 13
                     <input type ="radio" name ="Age" id="Age" required> Over 13
-         
-          </section>
-        </section>
-        <form action="./server.html" method="get">
-                <fieldset> <!--this is used to draw a square around the radio button areas-->
-                <legend>2. Your Profile</legend>
+                </section> 
+        </fieldset>
+             
+        <fieldset> <!--this is used to draw a square around the radio button areas-->
+            <legend>2. Your Profile</legend>
                 <section> <!--if you dont want your message to be sent to the browser, but on the payload of your document for security issues, use method POST-->
-                    
+                
                         <!--use label to give the form textbox a name. the label name is the id on the input line of code-->
                         <label for="name1">Bio:</label>
                         <textarea placeholder =""name="comment" id="" cols="20" rows="2"></textarea>
@@ -54,12 +55,12 @@
                             <input type="checkbox" name="Development" id="Development">Development
                             <input type="checkbox" name="Design" id="Design">Design
                             <input type="checkbox" name="Business" id="Business">Business
+                        </form>
+                        
                 </section>
-                
                 </fieldset>
-                <!--add button to your form-->
-                <button type ="submit" value="Submit">Sign Up</button>
-            </form>
-                
+                 <!--add button to your form-->
+                 <button type ="submit" value="Submit">Sign Up</button>
+    </form>          
 </body>
 </html>
